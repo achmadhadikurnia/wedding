@@ -19,6 +19,14 @@
                 </div>
 
                 <div class="form-group">
+                    <x-jet-label value="{{ __('Username') }}" />
+
+                    <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}" type="text" name="username"
+                                 :value="old('username')" required autofocus autocomplete="username" />
+                    <x-jet-input-error for="username"></x-jet-input-error>
+                </div>
+
+                <div class="form-group">
                     <x-jet-label value="{{ __('Email') }}" />
 
                     <x-jet-input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email" name="email"
