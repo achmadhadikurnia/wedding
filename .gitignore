@@ -3,6 +3,7 @@
 /public/hot
 /public/storage
 !/public/.htaccess
+!/public/assets
 !/public/favicon.ico
 !/public/index.php
 !/public/robots.txt
