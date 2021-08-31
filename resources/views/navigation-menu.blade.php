@@ -110,8 +110,9 @@
                             <hr class="dropdown-divider">
 
                             <!-- Authentication -->
-                            <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                         document.getElementById('logout-form').submit();">
+                            <x-jet-dropdown-link href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                                             document.getElementById('logout-form').submit();">
                                 {{ __('Log out') }}
                             </x-jet-dropdown-link>
                             <form method="POST" id="logout-form" action="{{ route('logout') }}">

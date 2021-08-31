@@ -20,15 +20,15 @@
                     <x-jet-label value="{{ __('Username') }}" />
 
                     <x-jet-input class="{{ $errors->has('username') ? 'is-invalid' : '' }}" type="text"
-                                 name="username" :value="old('username')" required />
+                        name="username" :value="old('username')" required />
                     <x-jet-input-error for="username"></x-jet-input-error>
                 </div>
 
                 <div class="form-group">
                     <x-jet-label value="{{ __('Password') }}" />
 
-                    <x-jet-input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" type="password"
-                                 name="password" required autocomplete="current-password" />
+                    <x-jet-input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                        type="password" name="password" required autocomplete="current-password" />
                     <x-jet-input-error for="password"></x-jet-input-error>
                 </div>
 
